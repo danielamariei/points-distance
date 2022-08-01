@@ -44,14 +44,6 @@ public class BinaryPointReader implements PointReader {
     }
 
     @SneakyThrows
-    public Stream<Point> getPoints() {
-        DataInputStream reader = getReader();
-        return Stream.generate(() -> Try.of(() -> readNextPoint(reader))).filter(Try::isSuccess).map(Try::get);
-    }
-
-
-    // TODO: close file resources or use try with resources
-    @SneakyThrows
     @Override
     public Iterator<Point> iterator() {
         return new BinaryPointIterator(getReader());

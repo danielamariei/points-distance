@@ -23,7 +23,4 @@ public class CommandLinePointWriter implements PointWriter {
         points.forEach(this::write);
     }
 
-    public static void main(String[] args) {
-        new CommandLinePointWriter().write(Arrays.asList(new Point(1, 2), new Point(3, 10)));
-    }
 }
