@@ -1,0 +1,22 @@
+package org.points.distance.comparators;
+
+import lombok.RequiredArgsConstructor;
+import org.points.distance.models.Point;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
+
+@RequiredArgsConstructor
+@Component
+@Profile("proximity.closest")
+public class ClosestProximityComparator implements PointProximityComparator {
+
+    private final Point reference;
+
+    @Override
+    public int compare(Point p1, Point p2) {
+        double a = p1.distanceTo(reference);
+        double b = p2.distanceTo(reference);
+
+        return Double.compare(a, b);
+    }
+}
