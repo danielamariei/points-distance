@@ -18,14 +18,16 @@ flowchart LR
         PComp(Proximity Comparator) --> PC(Proximity Calculator)
         Closest --> PComp(Proximity Comparator)
         Farthest --> PComp(Proximity Comparator)
-```        
+```
+
+![Architecture](architecture.PNG)
+
 
 # Solution
 ### Technologies
 - Spring
 - Gradle
 - Lombok
-- Docker
 
 ### Package Structure
 - `comparator`: logic for comparing points relating to a reference point; abstract different comparing possibilities
@@ -112,3 +114,4 @@ You can pipe the execution to a file, if you want to store the results for later
   - File (this can also be emulated using pipes in Linux environments)
   - etc.
 - Measure performance using AOP
+- Containerize application
