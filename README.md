@@ -70,8 +70,7 @@ The optimal set of points can be determine using different approaches. Current i
 - Parameterized tests for each test cases and for each strategy
 
 # Prerequisites
-- Java 13 is available on your system
-- Docker
+- Java 11 or a newer version is available on your system
 
 # Running the application
 
@@ -87,6 +86,7 @@ The optimal set of points can be determine using different approaches. Current i
     - **Output Source**: initialize `spring.profiles.active` with one of `[command.line.writer]`
 
 ### CMD
+You might need to make gradlew or gradlew.bat executable.
 
 ```groovy
 ./gradlew -q bootRun -Pargs=--points.path=<path-to-file>,--reference.point.x=0,--reference.point.y=0,--max.points=5,--spring.profiles.active=proximity.closest,--spring.profiles.active=proximity.strategy.priority.queue,--spring.profiles.active=binary.reader,--spring.profiles.active=command.line.writer
