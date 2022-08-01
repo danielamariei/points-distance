@@ -25,7 +25,7 @@ public class JsonPointReader implements PointReader {
     @Value("${points.path}")
     private final String pointsPath;
 
-    private ObjectMapper objectMapper = new JsonMapper();
+    private final ObjectMapper objectMapper = new JsonMapper();
 
     @Override
     public List<Point> read() {
