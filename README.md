@@ -72,6 +72,18 @@ The optimal set of points can be determine using different approaches. Current i
 # Prerequisites
 - Java 11 or a newer version is available on your system
 
+# Test the application
+### CMD
+You might need to make gradlew or gradlew.bat executable.
+
+```groovy
+./gradlew clean test
+
+```
+
+### IDE
+Import project in your IDE and run them from the IDE.
+
 # Running the application
 
 ### Params
