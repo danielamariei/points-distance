@@ -53,9 +53,9 @@ The optimal set of points can be determine using different approaches. Current i
 - Reads the input points one by one and adds them to the Heap
 - The heap does not grow over the maximum number of points
 - Complexity
-  - Assuming n is number of points and m number of max points to determine
-  - Time: O(n log m), practically O(n) when the max points to determine is small 
-  - Memory: O(m), practically O(1) for small number of points
+  - Assuming n is number of points and k number of max points to determine
+  - Time: O(n log k), practically O(n) when the max points to determine is small 
+  - Memory: O(k), practically O(1) for small number of points
 
 ### Sorting
 - Reads the input points one by one and adds them to an Array
@@ -68,6 +68,17 @@ The optimal set of points can be determine using different approaches. Current i
     
 # Testing
 - Parameterized tests for each test cases and for each strategy
+
+### CMD
+You might need to make gradlew or gradlew.bat executable.
+
+```groovy
+./gradlew clean test
+
+```
+
+### IDE
+Import project in your IDE and run them from the IDE.
 
 # Prerequisites
 - Java 11 or a newer version is available on your system
