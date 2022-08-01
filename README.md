@@ -51,13 +51,15 @@ The optimal set of points can be determine using different approaches. Current i
 - Reads the input points one by one and adds them to the Heap
 - The heap does not grow over the maximum number of points
 - Complexity
-  - Time: O(n log n), practically O(n) when the max points to determine is small 
-  - Memory: O(# of points to determine), practically O(1) for small number of points
+  - Assuming n is number of points and m number of max points to determine
+  - Time: O(n log m), practically O(n) when the max points to determine is small 
+  - Memory: O(m), practically O(1) for small number of points
 
 ### Sorting
 - Reads the input points one by one and adds them to an Array
 - Sort the array
 - Complexity
+    - Assumin n: number of points
     - Time: O(n log n)
     - Memory: O(n)
 
