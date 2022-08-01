@@ -69,10 +69,6 @@ The optimal set of points can be determine using different approaches. Current i
 # Testing
 - Parameterized tests for each test cases and for each strategy
 
-# Prerequisites
-- Java 11 or a newer version is available on your system
-
-# Test the application
 ### CMD
 You might need to make gradlew or gradlew.bat executable.
 
@@ -83,6 +79,9 @@ You might need to make gradlew or gradlew.bat executable.
 
 ### IDE
 Import project in your IDE and run them from the IDE.
+
+# Prerequisites
+- Java 11 or a newer version is available on your system
 
 # Running the application
 
