@@ -86,7 +86,7 @@ Import project in your IDE and run them from the IDE.
 # Running the application
 
 ### Params
-- `points.path` The set of points. Initialize with the path to the file that contains the points. Escape the path if required.
+- `points.path` The set of points. Initialize with the path to the file that contains the points. Escape the path if required. Include the path in `""` if it contains spaces.
 - `reference.point.x`: the x coordinate for the reference point
 - `reference.point.y`: the y coordinate for the reference point
 - `max.points`: the number of points to determine that are closest or farthest from the reference point
