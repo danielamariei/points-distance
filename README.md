@@ -34,7 +34,7 @@ flowchart LR
 - `configuration`: bean creation
 - `models`: model objects
 - `proximity.calculator.strategies`: logic for different proximity calculator possibilities (e.g., Priority Queues, Sorting, etc.); abstracts different strategies
-- `readers`: logic for reading the points from different sources~~~~; abstracts reading sources
+- `readers`: logic for reading the points from different sources; abstracts reading sources
   - Provides support for reading the input in a lazy fashion through iterators
 - `writers`: logic for printing the results; abstract writing sources
 
