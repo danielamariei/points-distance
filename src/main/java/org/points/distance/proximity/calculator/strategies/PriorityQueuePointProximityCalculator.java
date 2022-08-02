@@ -27,8 +27,8 @@ public class PriorityQueuePointProximityCalculator implements PointProximityCalc
         pointWriter.write(optimalPoints);
     }
 
-    private MinMaxPriorityQueue<Point> getPriorityQueueFor(Comparator<Point> metric, int maxPoints) {
-        return MinMaxPriorityQueue.orderedBy(metric).maximumSize(maxPoints).create();
+    private MinMaxPriorityQueue<Point> getPriorityQueueFor(PointProximityComparator pointProximityComparator, int maxPoints) {
+        return MinMaxPriorityQueue.orderedBy(pointProximityComparator).maximumSize(maxPoints).create();
     }
 
 }
