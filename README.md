@@ -20,9 +20,6 @@ flowchart LR
         Farthest --> PComp(Proximity Comparator)
 ```
 
-![Architecture](architecture.PNG)
-
-
 # Solution
 ### Technologies
 - Spring
